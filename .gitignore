@@ -1,0 +1,12 @@
+#
+ # Created by PhpStorm.
+ # User: Nemzag aka Gaz‑mên Arifi (Shkypi, 1979-09-30) {https://github.com/Nemzag/}.
+ # Date: 25-02-2020
+ # Time: 10h52
+ # Updated:
+#
+
+/.idea/
+/.idea/*
+
+/application/config/app-config.php
