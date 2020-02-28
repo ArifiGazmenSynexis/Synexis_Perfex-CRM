@@ -212,10 +212,10 @@ foreach ($rResult as $aRow) {
 
     $row[] = '<span data-toggle="tooltip" data-title="' . _dt($aRow['dateadded']) . '" class="text-has-action is-date">' . time_ago($aRow['dateadded']) . '</span>';
 
-    // Custom fields add values
-    foreach ($customFieldsColumns as $customFieldColumn) {
-        $row[] = (strpos($customFieldColumn, 'date_picker_') !== false ? _d($aRow[$customFieldColumn]) : $aRow[$customFieldColumn]);
-    }
+	// Custom fields add values
+	foreach ($customFieldsColumns as $customFieldColumn) {
+		$row[] = (strpos($customFieldColumn, 'date_picker_') !== false ? _d($aRow[$customFieldColumn]) : $aRow[$customFieldColumn]);
+	}
 
     $row['DT_RowId'] = 'lead_' . $aRow['id'];
 

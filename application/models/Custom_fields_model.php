@@ -10,6 +10,11 @@ class Custom_fields_model extends App_Model
 
     private $client_editable_fields = ['customers', 'contacts', 'tasks'];
 
+	// Begin Syn‑exis Gaz‑mên Arifi addition.
+	private $leads_custom_fields = ['checkbox'];
+	// End Syn‑exis Gaz‑mên Arifi addition.
+    // https://h2-phpmyadmin.infomaniak.com/sql.php?db=ac4ue_perfex&table=tblcustomfields&goto=db_sql.php&pos=0&is_js_confirmed=0
+
     public function __construct()
     {
         parent::__construct();
@@ -308,4 +313,15 @@ class Custom_fields_model extends App_Model
     {
         return $this->client_editable_fields;
     }
+
+	// Begin Syn‑exis Gaz‑mên Arifi addition.
+    /**
+     * Return fields where are editable in customers area
+     * @return array
+     */
+    public function get_leads_custom_fields()
+    {
+        return $this->leads_custom_fields;
+    }
+	// End Syn‑exis Gaz‑mên Arifi addition.
 }

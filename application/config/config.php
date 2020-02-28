@@ -45,7 +45,12 @@ function db_prefix()
 |
 */
 
-$config['base_url'] = APP_BASE_URL;
+// $config['base_url'] = APP_BASE_URL;
+
+// Begin Syn‑exis Gaz‑mên Arifi addition.
+$config['base_url'] = "http://localhost/Synexis_Dev-Perfex-CRM/";
+// End Syn‑exis Gaz‑mên Arifi addition.
+
 
 /*
 |--------------------------------------------------------------------------

@@ -10,6 +10,10 @@ class Custom_fields extends AdminController
 
     private $client_editable_fields = [];
 
+	// Begin Syn‑exis Gaz‑mên Arifi addition.
+    private $leads_custom_fields = [];
+	// End Syn‑exis Gaz‑mên Arifi addition.
+
     public function __construct()
     {
         parent::__construct();
@@ -21,6 +25,9 @@ class Custom_fields extends AdminController
         $this->pdf_fields             = $this->custom_fields_model->get_pdf_allowed_fields();
         $this->client_portal_fields   = $this->custom_fields_model->get_client_portal_allowed_fields();
         $this->client_editable_fields = $this->custom_fields_model->get_client_editable_fields();
+
+        // Synexis Gaz-mên Arifi add
+	    $this->leads_custom_fields    = $this->custom_fields_model->get_leads_custom_fields();
     }
 
     /* List all custom fields */
