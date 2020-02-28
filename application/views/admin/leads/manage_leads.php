@@ -318,19 +318,10 @@
 											array_push($table_data,$_t);
 										}
 
-										/* ORIGINAL
 										$custom_fields = get_custom_fields('leads',array('show_on_table'=>1));
 										foreach($custom_fields as $field){
 											array_push($table_data,$field['name']);
 										}
-										*/
-										// Begin Syn‑exis Gaz‑mên Arifi addition.
-										$custom_fields = get_custom_fields('leads',array('show_on_table'=>1));
-
-										foreach($custom_fields as $field){
-											array_push($table_data,$field['name']);
-										}
-										// End Syn‑exis Gaz‑mên Arifi addition.
 
 										$table_data = hooks()->apply_filters('leads_table_columns', $table_data);
 

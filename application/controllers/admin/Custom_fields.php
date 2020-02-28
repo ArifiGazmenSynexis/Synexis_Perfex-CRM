@@ -10,10 +10,6 @@ class Custom_fields extends AdminController
 
     private $client_editable_fields = [];
 
-	// Begin Syn‑exis Gaz‑mên Arifi addition.
-    private $leads_custom_fields = [];
-	// End Syn‑exis Gaz‑mên Arifi addition.
-
     public function __construct()
     {
         parent::__construct();

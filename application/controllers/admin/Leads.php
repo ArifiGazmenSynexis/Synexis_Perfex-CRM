@@ -45,7 +45,7 @@ class Leads extends AdminController
     {
         if (!is_staff_member()) {
             ajax_access_denied();
-            
+
         }
         $this->app->get_table_data('leads');
     }

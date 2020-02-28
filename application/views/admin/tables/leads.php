@@ -214,6 +214,11 @@ foreach ($rResult as $aRow) {
 
 	// Custom fields add values
 	foreach ($customFieldsColumns as $customFieldColumn) {
+
+		// Begin Syn‑exis Gaz‑mên Arifi addition.
+		$aRow[$customFieldColumn] = str_replace(',', '.<br />', $aRow[$customFieldColumn]);
+		// End Syn‑exis Gaz‑mên Arifi addition.
+
 		$row[] = (strpos($customFieldColumn, 'date_picker_') !== false ? _d($aRow[$customFieldColumn]) : $aRow[$customFieldColumn]);
 	}
 
