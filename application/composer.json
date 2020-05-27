@@ -9,7 +9,7 @@
         "tecnickcom/tcpdf": "^6.2",
         "studio-42/elfinder": "^2.1",
         "stripe/stripe-php": "^7.0",
-        "phpmailer/phpmailer": "^5.2.26",
+        "phpmailer/phpmailer": "^6.1.6",
         "erusev/parsedown": "^1.7",
         "zbateson/mail-mime-parser": "^0.4.9",
         "league/omnipay": "^3.0",
