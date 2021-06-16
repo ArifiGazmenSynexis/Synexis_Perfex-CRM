@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8cbb5c63bb141ff8412ef07f916289e",
+    "content-hash": "bacc2ee48e86241f6a8c6556120f03a5",
     "packages": [
         {
             "name": "2checkout/2checkout-php",
@@ -140,46 +140,6 @@
             ],
             "description": "Braintree PHP Client Library",
             "time": "2019-03-28T23:16:53+00:00"
-        },
-        {
-            "name": "braintree/braintreehttp",
-            "version": "0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/braintree/braintreehttp_php.git",
-                "reference": "204e36494d9e4b31033328df96af54b17f68b698"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/braintree/braintreehttp_php/zipball/204e36494d9e4b31033328df96af54b17f68b698",
-                "reference": "204e36494d9e4b31033328df96af54b17f68b698",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "wiremock-php/wiremock-php": "1.43.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "BraintreeHttp\\": "lib/BraintreeHttp"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Braintree",
-                    "email": "code@getbraintree.com"
-                }
-            ],
-            "abandoned": true,
-            "time": "2018-04-17T20:53:31+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -2483,16 +2443,16 @@
         },
         {
             "name": "studio-42/elfinder",
-            "version": "2.1.51",
+            "version": "2.1.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Studio-42/elFinder.git",
-                "reference": "783709d6b97cafba586b0aa61e48b271407821fb"
+                "reference": "06ada3132cefd057e1d89cb016f8c82473d420d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/783709d6b97cafba586b0aa61e48b271407821fb",
-                "reference": "783709d6b97cafba586b0aa61e48b271407821fb",
+                "url": "https://api.github.com/repos/Studio-42/elFinder/zipball/06ada3132cefd057e1d89cb016f8c82473d420d4",
+                "reference": "06ada3132cefd057e1d89cb016f8c82473d420d4",
                 "shasum": ""
             },
             "require": {
@@ -2537,7 +2497,11 @@
             ],
             "description": "File manager for web",
             "homepage": "http://elfinder.org",
-            "time": "2019-12-08T03:03:51+00:00"
+            "support": {
+                "issues": "https://github.com/Studio-42/elFinder/issues",
+                "source": "https://github.com/Studio-42/elFinder/tree/2.1.59"
+            },
+            "time": "2021-06-13T15:04:24+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -3050,6 +3014,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "php": "^5.6"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }
